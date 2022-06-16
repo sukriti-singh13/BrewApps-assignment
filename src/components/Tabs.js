@@ -1,10 +1,14 @@
 import { Tabs,Tab } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaFire,FaGem} from "react-icons/fa";
+import {GiByzantinTemple} from "react-icons/gi"
 import Card from "./Cards"
 import "../index.css"
 import data from "../data"
 
+
 export default function TabsCustom(){
+
     const CardElement= data.map(item=>{
         return <Card 
         key={item.id}
@@ -12,11 +16,18 @@ export default function TabsCustom(){
        />
       })
     return(
-        <Tabs defaultActiveKey="profile" className="my-5">
-  <Tab eventKey="24h Trending" title="24h Trending">
+        <Tabs defaultActiveKey="24h-trending" className="my-5">
+  <Tab eventKey="24h-trending" title={
+   <span>
+     <FaFire/><span className="margin-given">{"24h Trending"}</span>
+   </span>
+   
+  }>
+  
   <div className="sectionstyle" >
   {CardElement}
   </div>
+
  
  
 
@@ -32,12 +43,17 @@ export default function TabsCustom(){
   {CardElement}
   </div>
   </Tab>
-  <Tab eventKey="In genisis" title="In genisis">
+  <Tab eventKey="In genisis" title={<span><FaGem/><span className="margin-given">{"In Genisis"}</span></span>}>
   <div className="sectionstyle" >
   {CardElement}
   </div>
   </Tab>
-  <Tab eventKey="In Temple" title="In Temple">
+  <Tab eventKey="In Temple" title={
+   <span>
+     <GiByzantinTemple/><span className="margin-given">{"In Temple"}</span>
+   </span>
+   
+  }>
   <div className="sectionstyle" >
   {CardElement}
   </div>
