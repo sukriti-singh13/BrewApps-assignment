@@ -1,16 +1,10 @@
-import Title from "./components/Title"
-import Card from "./components/Cards"
-import TabsCustom from "./components/Tabs"
-import data from "./data"
+import Title from "./components/Title";
+import TabsCustom from "./components/Tabs";
 export default function App() {
- 
   return (
     <div className="Container">
-      <Title/>
-      <TabsCustom/>
+      <Title />
+      <TabsCustom />
     </div>
-    
   );
 }
-
-
