@@ -33,7 +33,7 @@ h3{
   position:relative;
   width:25rem;
   height:16rem;
- 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .card-info{
   position:absolute;
@@ -115,6 +115,7 @@ margin-left:0.3rem;
   border-radius: 50px;
   width:100%;
 }
+
 @media only screen and (max-width: 600px){
   .Container{
     padding:1rem;
