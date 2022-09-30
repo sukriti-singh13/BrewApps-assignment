@@ -1,7 +1,7 @@
 export default function Card(props) {
   return (
     <div className="card">
-      <img className="nft-images" src={props.image} alt="nft" />
+      <img className="nft-images" src={props.image} alt="nft my-nft" />
       <div className="card-info">
         <h3> {props.heading}</h3>
         <div className="more-info">
